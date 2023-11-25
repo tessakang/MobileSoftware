@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobileSoftware</string>
+    <string name="cart">장바구니담기</string>
+    <string name="buy">바로주문하기</string>
+</resources>

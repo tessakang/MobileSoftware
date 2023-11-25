@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/ImageView"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/peach"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="천도 복숭아"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/ImageView"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_alignTop="@id/ImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5000원"
+            android:textSize="15dp"
+            android:layout_below="@id/textView1"
+            android:layout_toRightOf="@id/ImageView"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="182dp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="춘천 복숭아"
+            android:textSize="15dp"
+            android:layout_below="@id/textView2"
+            android:layout_toRightOf="@id/ImageView"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="169dp"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:layout_below="@id/textView3"
+            android:layout_toRightOf="@id/ImageView"
+            android:layout_toEndOf="@id/ImageView"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="73dp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy"
+            android:layout_below="@id/textView3"
+            android:layout_toRightOf="@id/button1"
+            android:layout_toEndOf="@id/button1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topComponent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:gravity="center"
+            android:layout_centerInParent="true"/> <!-- 수정된 부분 -->
+    </RelativeLayout>
+</RelativeLayout>
